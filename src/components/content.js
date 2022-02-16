@@ -3,7 +3,6 @@ import Avatar from "@material-ui/core/Avatar";
 
 class App extends React.Component {
 
-    // Constructor
     constructor(props) {
         super(props);
 
@@ -13,8 +12,6 @@ class App extends React.Component {
         };
     }
 
-    // ComponentDidMount is used to
-    // execute the code
     componentDidMount() {
         fetch(
             "https://jsonplaceholder.typicode.com/users")
