@@ -34,7 +34,7 @@ class App extends React.Component {
                     items.map((item) => (
                         
                         <div key={item.id} className="row" style={{backgroundColor: ((item.id)%2 === 1) ? "#FAFAFA" : "white"}}>
-                            <div className="name"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input><Avatar style={{ width: 25, height: 25 }} src="https://mui.com/static/images/avatar/1.jpg" className="avatar"/>{item.name}</div>
+                            <div className="name"><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input><Avatar style={{ width: 25, height: 25 }} src={"https://mui.com/static/images/avatar/" + item.id + ".jpg"} className="avatar"/>{item.name}</div>
                             <div className="number">{item.phone}</div>
                             <div className="email">{item.email}</div>
                             <div className='location'>{item.address.geo.lat}</div>
