@@ -25,7 +25,7 @@ class App extends React.Component {
     }
     render() {
         const { DataisLoaded, items } = this.state;
-        if (!DataisLoaded) return <div>
+        if (!DataisLoaded) return <div className="row">
             <h1> Pleses wait some time.... </h1> </div>;
 
         return (

@@ -81,6 +81,7 @@
     display:-moz-box;
     display:-ms-flexbox;
     display:flex;
+    align-items: center;
 }
 .avatar{
     margin: 0 10px 0 10px;
