@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <div id="heading">
-            <div className="name">{headerObject.name}</div>
+            <div className="name"><div className='space'></div>{headerObject.name}</div>
             <div className="number">{headerObject.number}</div>
             <div className="email">{headerObject.email}</div>
             <div className='location'>{headerObject.location.lat}</div>

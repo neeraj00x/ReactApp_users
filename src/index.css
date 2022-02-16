@@ -24,8 +24,11 @@
 #tableHeader{
     background-color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(131, 128, 128);
 }
-
+.space{
+    width: 25%;
+}
 .bot_border{
     background-color: white;
     padding: 12px;
@@ -51,9 +54,6 @@
     
 }
 
-.location{
-    width: 10%;
-}
 .row {
     display: flex;
     flex: 1 1 0px;
@@ -69,6 +69,10 @@
     color: #e93769;
 }
 
+.location{
+    width: 10%;
+} 
+
 .name, .email, .number{
     width: 20%;
 }
@@ -76,12 +80,14 @@
 .location div, .action div{
     width: 30%;
 }
+
 .name{
     display:-webkit-box;
     display:-moz-box;
     display:-ms-flexbox;
     display:flex;
     align-items: center;
+    text-align: center;
 }
 .avatar{
     margin: 0 10px 0 10px;
