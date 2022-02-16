@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "@material-ui/core/Avatar";
 
-class App extends React.Component {
+class Content extends React.Component {
 
     constructor(props) {
         super(props);
@@ -29,7 +29,7 @@ class App extends React.Component {
             <h1> Pleses wait some time.... </h1> </div>;
 
         return (
-            <div className="App">
+            <div className="Content">
                 {
                     items.map((item) => (
                         
@@ -51,4 +51,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default Content;
