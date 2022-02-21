@@ -1,20 +1,24 @@
 import React from 'react';
+import Avatar from "@material-ui/core/Avatar";
 
-export default function Rows(props) {
+function Rows(props) {
 
     return (
-        <div className='row'>
-            <div>{props.name}</div>
-            <div>{props.address.zipcode}</div>
-            <div>{props.email}</div>
-            <div className='location'>
-                <div>{props.address.geo.lat}</div>
-                <div>{props.address.geo.long}</div>
-            </div>
+        <div key={props.item.id} className="row" style={{ backgroundColor: ((props.item.id) % 2 === 1) ? "#FAFAFA" : "white" }}>
+            <div className="name"><input type="checkbox" id="vehicle1" onClick={clickHandler}></input><Avatar style={{ width: 25, height: 25 }} src={"https://mui.com/static/images/avatar/" + (props.item.id % 7 + 1) + ".jpg"} className="avatar" />{props.item.name}</div>
+            <div className="number">{props.item.phone}</div>
+            <div className="email">{props.item.email}</div>
+            <div className='location'>{props.item.address.geo.lat}</div>
+            <div className='location'>{props.item.address.geo.lng}</div>
             <div className='action'>
-                <div>Edit</div>
-                <div>Delete</div>
+                <div>🖉 Edit</div>
+                <div>🗑 Delete</div>
             </div>
         </div>
     )
 }
+
+function clickHandler() {
+}
+
+export default Rows;
