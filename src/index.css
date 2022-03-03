@@ -64,14 +64,16 @@
     border-left: 3px solid white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .row:hover{
     border-left: 3px solid #e93769;
     color: #e93769;
+    font-size: 101%;
 }
 
 .location{
     width: 10%;
-} 
+}
 
 .name, .email, .number{
     width: 20%;
@@ -89,6 +91,7 @@
     align-items: center;
     text-align: center;
 }
+
 .avatar{
     margin: 0 10px 0 10px;
 }
