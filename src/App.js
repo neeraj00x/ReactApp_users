@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from './components/Header';
 import TableHeader from './components/tableHeader';
@@ -9,13 +8,13 @@ function App() {
     <div id="body">
       <div id='content'>
         <div>
-          <Header/>
+          <Header />
         </div>
         <div id='tableHeader'>
-          <TableHeader/>
+          <TableHeader />
         </div>
         <div id='items'>
-          <Content/>
+          <Content />
         </div>
         <div className='bot_border'></div>
       </div>
